@@ -9,6 +9,32 @@ function Salvar(){
     col0.innerHTML = document.getElementById('id').value;
     col1.innerHTML = document.getElementById('servico').value;
     col2.innerHTML = document.getElementById('valor').value;
-    col3.innerHTML = '<i class="bi bi-pencil-square"></i>';
-    col4.innerHTML = '<i class="bi bi-trash3"></i>';
+    col3.innerHTML = '<i class="bi bi-pencil-square" onclick="Editar()"></i>';
+    col4.innerHTML = '<i class="bi bi-trash3" onclick="Remover()"></i>';
+}
+
+function Editar(){
+    let row = event.target.parentNode.parentNode;
+    let col0 = row.cells[0];
+    let col1 = row.cells[1];
+    let col2 = row.cells[2];
+
+    let id = col0.innerHTML;
+    let servico = col1.innerHTML;
+    let valor = col2.innerHTML;
+
+    document.getElementById('id').value = id;
+    document.getElementById('servico').value = servico;
+    document.getElementById('valor').value = valor;
+
+    row.remove();
+}
+
+function Remover(){
+    let servicos = document.querySelectorAll("tr");
+
+    servicos.forEach(function(tr) {
+        tr.addEventListener("click",  tr.remove);
+    });
+
 }
