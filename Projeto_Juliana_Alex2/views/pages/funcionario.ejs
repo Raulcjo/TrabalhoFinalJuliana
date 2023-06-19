@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="/js/acaoFuncionario.js"></script>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/funcionario.css">
+    <title>Cadastro de Fornecedores</title>
+</head>
+<body>
+    <header class=" border border-warning-subtle px-3 m-3 mx-5 ">
+ 
+        <div class="row">
+        <div class="col-3 text-center">
+        <div class="img">
+        <img src="/img/logo_imagem.png" width="80" height="" class="d-inline-block py-2">
+        <img src="/img/logo_nome.png" width="150" height="" class="d-inline-block py-2">
+        </div>
+        </div>
+           <div class="col-2 py-5 " >
+            <a href="http://localhost:8000/" class="letras">Home</a>
+            </div>
+            <div class="col-3 py-5">
+            <a href="http://localhost:8000/servicos" class="letras">Serviços</a>
+            </div>
+            <div class="col-3 py-5">
+            <a href="http://localhost:8000/solicitacoes" class="letras">Solicitações</a>
+            </div>
+            </div>
+      </div>  
+      </header>
+    <div class="container mt-3">
+        <div>
+            <div class="funci">
+                <h1>Cadastre de funcionário: </h1>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                    </div>
+                    <div>
+                        <input class="form-control border-dark-subtle" type="number" id="id" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div>
+                        <input class="form-control border-dark-subtle" type="text" id="nome">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="tel">Telefone</label>
+                        </div>
+                        <div>
+                            <input  class="form-control border-dark-subtle" type="tel" id="tel">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="cpf">Cpf</label>
+                        </div>
+                        <div>
+                            <input class="form-control border-dark-subtle" id="cpf">
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div>
+                        <input class="form-control border-dark-subtle" type="email" id="email">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="genero">Gênero</label>
+                    </div>
+                    <div>
+                        <select name="genero" id="genero" class="form-control border-dark-subtle">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                            <option value="O">Outro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="data">Data de Nascimento</label>
+                    </div>
+                    <div>
+                        <input class="form-control border-dark-subtle" class="form-control" type="date" id="data">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 mb-2">
+            <button id="save" value="salvar" onclick="Salvar()" class="btn btn-primary">Salvar</button>
+        </div>
+        <div>
+            <h4 class="funci1">Funcionario Cadastrado</h4>
+        </div>
+        <div id="tabular">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Cpf</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Nascimento</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
