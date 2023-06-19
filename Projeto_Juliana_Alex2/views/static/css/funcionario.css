@@ -1,0 +1,31 @@
+body{
+    font-family: cursive;
+
+}
+
+.funci{
+    text-align: center;
+    font-weight: bold;
+}
+
+.funci1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.hom{
+    text-align: center;
+    font-weight: bold;
+}
+
+.area{
+    padding-top: 65px;
+}
+
+header{
+    background-color: rgb(246, 243, 239);
+    
+}
+.letras{
+    color: rgb(200, 84, 34);
+}
