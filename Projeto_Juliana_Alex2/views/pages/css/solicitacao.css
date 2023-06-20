@@ -1,0 +1,27 @@
+body{
+    font-family: cursive;
+    color: rgb(200, 84, 34);
+    background-color: antiquewhite;
+}
+
+.soli{
+    text-align: center;
+    font-weight: bold;
+}
+
+.serSoli{
+    text-align: center;
+    font-weight: bold;
+    
+}
+.letras{
+    color: rgb(200, 84, 34);
+}
+.all{
+width: 65%;
+height: 65%;
+padding: 3%;
+padding-left: 3rem;
+margin-left: 15rem;
+background-color: rgb(246, 243, 239);
+}
