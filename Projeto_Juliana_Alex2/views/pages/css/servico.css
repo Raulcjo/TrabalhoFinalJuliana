@@ -1,0 +1,24 @@
+.serv{
+    text-align: center;
+    font-weight: bold;
+}
+.fina{
+    text-align: center;
+    font-weight: bold;
+}
+body{
+    font-family: cursive;
+    color: rgb(200, 84, 34);
+    background-color: antiquewhite;
+}
+.letras{
+    color: rgb(200, 84, 34);
+}
+.all{
+width: 65%;
+height: 65%;
+padding: 3%;
+padding-left: 2rem;
+margin-left: 10rem;
+background-color: rgb(246, 243, 239);
+}
